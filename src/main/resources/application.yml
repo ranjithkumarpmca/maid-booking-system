@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: maid-booking-system
+  jackson:
+    mapper:
+      accept-case-insensitive-enums: true
+
+maidbooking:
+  time-zone: Asia/Kolkata        # single-timezone platform (see README assumptions)
+  seed-data: true                # loads a few demo maids on startup
+  pricing:
+    weekend-multiplier: 1.20     # dynamic pricing: weekend surcharge
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
